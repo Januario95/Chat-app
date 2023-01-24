@@ -12,8 +12,8 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 const messages = [
-	{ name: 'Tim', message: 'Yo' },
-	{ name: 'Pam', message: 'Hi' }
+	{ name: 'Janu', message: 'Hi bro' },
+	{ name: 'Ranualdo', message: 'Hello bro' }
 ];
 
 app.get('/', (req, res) => {

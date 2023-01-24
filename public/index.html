@@ -206,13 +206,6 @@
     <script>
         const socket = io();
 
-        loadMessages();
-        function loadMessages() {
-            $.get('http://localhost:8000/api/v1/messages', messages => {
-                console.log(messages);
-            })
-        }
-
         function openForm() {
             // document.getElementById("myForm").style.display = "block";
             $('#myForm').fadeIn('normal');
@@ -225,7 +218,6 @@
 
 
         $(() => {
-            console.log('loaded');
             getMessages();
             $("#send").click(() => {
                 let name = $('#name');
